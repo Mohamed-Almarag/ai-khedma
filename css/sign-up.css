@@ -1,0 +1,159 @@
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+::-moz-selection {
+  background-color: #0d98a2;
+  color: #fff;
+}
+
+::selection {
+  background-color: #0d98a2;
+  color: #fff;
+}
+
+.main-section-title {
+  color: #0d98a2;
+  margin: 0 auto 4rem;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.main-section-title::before {
+  position: absolute;
+  content: "";
+  top: 115%;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 4px;
+  background-color: #0d98a2;
+}
+
+.main-form-container .main-form .form-group {
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid #747474;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 5px;
+  line-height: 1;
+}
+
+.main-form-container .main-form .form-group.for-check-box {
+  border: none;
+  padding: 0;
+}
+
+.main-form-container .main-form .form-group .form-icon {
+  color: #797979;
+}
+
+.main-form-container .main-form .form-group .input-form {
+  width: 100%;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  color: #797979;
+}
+
+.main-form-container .main-form .form-group .input-form.text-area {
+  height: 115px;
+  resize: none;
+}
+
+.main-form-container .main-form .form-group .input-form:focus {
+  outline: none;
+}
+
+.main-form-container .main-form .form-group:focus-within {
+  border-color: #0d98a2 !important;
+}
+
+.main-form-container .main-form .form-group input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  visibility: hidden;
+  text-align: center;
+}
+
+.main-form-container .main-form .form-group input[type="checkbox"]:after,
+.main-form-container .main-form .form-group input[type="checkbox"]::after {
+  content: " ";
+  background-color: #fff;
+  display: inline-block;
+  color: #0d98a2;
+  width: 25px;
+  height: 25px;
+  visibility: visible;
+  border: 1px solid #747474;
+  padding-top: 3px;
+}
+
+.main-form-container .main-form .form-group input[type="checkbox"]:checked:after,
+.main-form-container .main-form .form-group input[type="checkbox"]:checked::after {
+  content: "\2714";
+  font-weight: bold;
+}
+
+.main-form-container .main-form .form-group .form-label {
+  margin: 0 8px;
+}
+
+.main-form-container .submit-button {
+  background-color: #0d98a2;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-form-container .submit-button {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.main-form-container .form-ask {
+  font-weight: 600;
+}
+
+.main-form-container .form-link {
+  margin: 0 10px;
+  color: #0d98a2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-section {
+  height: 100vh;
+  padding-top: 120px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-section .ask-forget {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+
+.form-section .ask-forget .links {
+  color: #0d98a2;
+  text-decoration: none;
+  font-weight: 600;
+}
