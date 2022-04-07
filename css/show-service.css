@@ -96,6 +96,11 @@ body {
   }
 }
 
+.main-header .navbar .navbar-collapse .user .chatt-msg {
+  text-decoration: none;
+  color: #fff;
+}
+
 .main-header .navbar .navbar-collapse .user .message-icon {
   margin: 0 20px;
   cursor: pointer;
