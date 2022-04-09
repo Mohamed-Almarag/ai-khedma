@@ -40,3 +40,15 @@ $(() => {
     ],
   });
 });
+
+// Scroll To Top Button
+let goUpButton = document.querySelector(".go-to-up");
+window.onscroll = () => {
+  window.pageYOffset >= 1000
+    ? (goUpButton.style.display = "block")
+    : (goUpButton.style.display = "none");
+};
+
+goUpButton.onclick = () => {
+  window.scrollTo(0, 0);
+};
